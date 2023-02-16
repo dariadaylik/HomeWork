@@ -51,6 +51,8 @@ public class MyTest {
         WebElement webElement6 = driver.findElement(By.xpath("//*[@id=\"modal\"]/div/div/div[2]/div/div/form/div/div[2]/div[3]/button/div"));
         webElement6.click();
 
+        Assertions.assertEquals("Онлайн-гипермаркет 21vek.by",driver.getTitle(),"Не та страница");
+
 
     }
 
